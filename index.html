@@ -54,12 +54,13 @@ html,body{width:100%;height:100%;overflow:hidden;background:#080808;font-family:
 @keyframes ri{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
 
 /* S1b — what Forma does (tool list) */
-#s1b .pad{justify-content:flex-start;padding-top:4.5%}
-#s1b .s1b-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3%,5vw,7%);align-items:start;flex:1;min-height:0}
-#s1b .s1b-colhead{font-size:clamp(14px,2.1vw,28px);font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--a);margin-bottom:clamp(16px,2.8vh,32px);line-height:1.25}
-#s1b .s1b-colhead .s1b-mo{font-size:.65em;color:var(--mu);letter-spacing:.05em}
-#s1b ul.s1b-tools{list-style:none;padding:0;margin:0;font-family:var(--fb);font-weight:500;font-size:clamp(18px,3vw,40px);line-height:1.22;color:var(--tx);columns:2;column-gap:clamp(22px,4.5vw,56px)}
-#s1b ul.s1b-tools li{break-inside:avoid;padding:.22em 0}
+#s1b .pad{justify-content:flex-start;padding-top:4%;padding-bottom:3%;min-height:0}
+#s1b .s1b-cols{display:grid;grid-template-columns:1fr 1fr;gap:3%;align-items:stretch;flex:1;min-height:0;overflow:hidden}
+#s1b .s1b-panel.card{margin:0;min-height:0;overflow:hidden;display:flex;flex-direction:column;padding:clamp(10px,2.2vh,22px) clamp(12px,2.5vw,28px)}
+#s1b .s1b-colhead{font-size:clamp(10px,1.2vw,14px);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--a);margin-bottom:clamp(8px,1.4vh,14px);line-height:1.2;flex-shrink:0}
+#s1b .s1b-colhead .s1b-mo{font-size:.7em;color:var(--mu);letter-spacing:.04em}
+#s1b .s1b-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(5px,.7vw,9px);align-content:start;min-height:0;overflow:hidden}
+#s1b .s1b-tag{display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--fb);font-weight:500;font-size:clamp(9px,1.05vw,14px);line-height:1.15;color:var(--a);padding:clamp(5px,.55vw,9px) clamp(6px,.9vw,12px);border-radius:4px;border:1px solid rgba(232,98,42,.28);background:rgba(232,98,42,.07)}
 
 /* S2 problem (light) */
 #s2 .cg{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:4%;border:1px solid var(--br);border-radius:8px;overflow:hidden;background:var(--sf)}
@@ -207,32 +208,19 @@ html,body{width:100%;height:100%;overflow:hidden;background:#080808;font-family:
 <div class="slide lt" id="s1b">
   <div class="pad">
     <div class="ey">What Is a Tool Suite</div>
-    <div class="big" style="margin-bottom:3.5%">What Forma Does.</div>
+    <div class="big" style="margin-bottom:2.5%">What Forma Does.</div>
     <div class="s1b-cols">
-      <div>
+      <div class="card s1b-panel">
         <div class="s1b-colhead">Free · No account required</div>
-        <ul class="s1b-tools">
-          <li>Compress PDF</li>
-          <li>Merge PDFs</li>
-          <li>Split PDF</li>
-          <li>PDF to Word</li>
-          <li>Convert Image</li>
-          <li>Extract Audio</li>
-          <li>Trim Video</li>
-          <li>JSON Formatter</li>
-          <li>Base64</li>
-          <li>URL Encoder</li>
-        </ul>
+        <div class="s1b-grid">
+          <span class="s1b-tag">Compress PDF</span><span class="s1b-tag">Merge PDFs</span><span class="s1b-tag">Split PDF</span><span class="s1b-tag">PDF to Word</span><span class="s1b-tag">Convert Image</span><span class="s1b-tag">Extract Audio</span><span class="s1b-tag">Trim Video</span><span class="s1b-tag">JSON Formatter</span><span class="s1b-tag">Base64</span><span class="s1b-tag">URL Encoder</span>
+        </div>
       </div>
-      <div>
+      <div class="card s1b-panel">
         <div class="s1b-colhead">Pro · $9<span class="s1b-mo">/mo</span> · AI tools</div>
-        <ul class="s1b-tools">
-          <li>PDF to Excel</li>
-          <li>Summarise Doc</li>
-          <li>Transcribe Audio</li>
-          <li>Remove Background</li>
-          <li>Receipt to Excel</li>
-        </ul>
+        <div class="s1b-grid">
+          <span class="s1b-tag">PDF to Excel</span><span class="s1b-tag">Summarise Doc</span><span class="s1b-tag">Transcribe Audio</span><span class="s1b-tag">Remove Background</span><span class="s1b-tag">Receipt to Excel</span>
+        </div>
       </div>
     </div>
     <p style="margin-top:auto;padding-top:3%;font-size:clamp(11px,1.25vw,15px);line-height:1.55;color:var(--mu);max-width:92%">AI-powered tools require a <strong style="font-weight:600;color:var(--tx)">Pro</strong> subscription for <strong style="font-weight:600;color:var(--tx)">unlimited</strong> use.</p>
