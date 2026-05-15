@@ -85,7 +85,7 @@ Use with `index.html`: **14 slides** in order (← →). Bullets are a live scri
 
 ## Slide 10 · Tool stack (`s10`)
 
-- One line: **Tool stack.** Boring-by-design on purpose—we’re buying **maintainability and speed**.
+- Eyebrow: **Building** — then **Tool stack.**: boring-by-design on purpose—we’re buying **maintainability and speed**.
 - The **full tool list** already landed on **slide 2**; here you only walk the **engineering** tiles.
 - **Next.js 14** App Router · **TypeScript** · **CSS Modules**.
 - **Vercel** for deploy and scaling with minimal ops.
@@ -97,7 +97,7 @@ Use with `index.html`: **14 slides** in order (← →). Bullets are a live scri
 
 ## Slide 11 · Marketing (`s11`)
 
-- **Marketing.** Headline stays short intentionally—everything lives in the four tiles.
+- **Reach** + **Marketing.** — short on purpose; detail lives in the four tiles.
 - **Twitter**: build in public—authentic beats polished when you’re unknown.
 - **Reddit**: high-intent **r/SideProject**, productivity, freelance—truthful posts in the right thread convert.
 - **Product Hunt**: one concentrated spike — coordinate support the night before; free attention if you nail timing.
