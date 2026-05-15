@@ -55,6 +55,11 @@ html,body{width:100%;height:100%;overflow:hidden;background:#080808;font-family:
 
 /* S1b — what Forma does (tool list) */
 #s1b .pad{justify-content:flex-start;padding-top:4.5%}
+#s1b .s1b-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3%,5vw,7%);align-items:start;flex:1;min-height:0}
+#s1b .s1b-colhead{font-size:clamp(14px,2.1vw,28px);font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--a);margin-bottom:clamp(16px,2.8vh,32px);line-height:1.25}
+#s1b .s1b-colhead .s1b-mo{font-size:.65em;color:var(--mu);letter-spacing:.05em}
+#s1b ul.s1b-tools{list-style:none;padding:0;margin:0;font-family:var(--fb);font-weight:500;font-size:clamp(18px,3vw,40px);line-height:1.22;color:var(--tx);columns:2;column-gap:clamp(22px,4.5vw,56px)}
+#s1b ul.s1b-tools li{break-inside:avoid;padding:.22em 0}
 
 /* S2 problem (light) */
 #s2 .cg{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:4%;border:1px solid var(--br);border-radius:8px;overflow:hidden;background:var(--sf)}
@@ -203,18 +208,31 @@ html,body{width:100%;height:100%;overflow:hidden;background:#080808;font-family:
   <div class="pad">
     <div class="ey">What Is a Tool Suite</div>
     <div class="big" style="margin-bottom:3.5%">What Forma Does.</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4%;align-items:start;flex:1;min-height:0">
+    <div class="s1b-cols">
       <div>
-        <div class="cl">Free · No account required</div>
-        <div style="display:flex;flex-wrap:wrap;gap:6px">
-          <span class="tag">Compress PDF</span><span class="tag">Merge PDFs</span><span class="tag">Split PDF</span><span class="tag">PDF to Word</span><span class="tag">Convert Image</span><span class="tag">Extract Audio</span><span class="tag">Trim Video</span><span class="tag">JSON Formatter</span><span class="tag">Base64</span><span class="tag">URL Encoder</span>
-        </div>
+        <div class="s1b-colhead">Free · No account required</div>
+        <ul class="s1b-tools">
+          <li>Compress PDF</li>
+          <li>Merge PDFs</li>
+          <li>Split PDF</li>
+          <li>PDF to Word</li>
+          <li>Convert Image</li>
+          <li>Extract Audio</li>
+          <li>Trim Video</li>
+          <li>JSON Formatter</li>
+          <li>Base64</li>
+          <li>URL Encoder</li>
+        </ul>
       </div>
       <div>
-        <div class="cl">Pro · $9<span style="font-size:65%;color:var(--mu)">/mo</span> · AI tools</div>
-        <div style="display:flex;flex-wrap:wrap;gap:6px">
-          <span class="tag">PDF to Excel</span><span class="tag">Summarise Doc</span><span class="tag">Transcribe Audio</span><span class="tag">Remove Background</span><span class="tag">Receipt to Excel</span>
-        </div>
+        <div class="s1b-colhead">Pro · $9<span class="s1b-mo">/mo</span> · AI tools</div>
+        <ul class="s1b-tools">
+          <li>PDF to Excel</li>
+          <li>Summarise Doc</li>
+          <li>Transcribe Audio</li>
+          <li>Remove Background</li>
+          <li>Receipt to Excel</li>
+        </ul>
       </div>
     </div>
     <p style="margin-top:auto;padding-top:3%;font-size:clamp(11px,1.25vw,15px);line-height:1.55;color:var(--mu);max-width:92%">AI-powered tools require a <strong style="font-weight:600;color:var(--tx)">Pro</strong> subscription for <strong style="font-weight:600;color:var(--tx)">unlimited</strong> use.</p>
