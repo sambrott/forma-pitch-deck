@@ -15,7 +15,7 @@ Use with `index.html`: **14 slides** in order (← →). Bullets are a live scri
 
 ## Slide 2 · What Forma does (`s1b`)
 
-- Eyebrow: **What Is a Tool Suite** — frame a **suite** as one place for everyday file work, not one-off converters.
+- Eyebrow: **At a glance** — this slide is the snapshot before **What Forma Does.** Free column vs **Pro ($9/mo)** AI column, plus the unlimited-use footnote.
 - Headline: **What Forma Does.** — immediate product clarity after the logo.
 - **Left column · Free** — **no account** for the deterministic tools; this is the wide top of funnel.
 - **Right column · Pro ($9/mo) · AI tools** — the five **AI** capabilities; tie price to **unlimited** use on the line at the bottom.
