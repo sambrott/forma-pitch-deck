@@ -53,6 +53,9 @@ html,body{width:100%;height:100%;overflow:hidden;background:#080808;font-family:
 @keyframes ci{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @keyframes ri{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
 
+/* S1b — what Forma does (tool list) */
+#s1b .pad{justify-content:flex-start;padding-top:4.5%}
+
 /* S2 problem (light) */
 #s2 .cg{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:4%;border:1px solid var(--br);border-radius:8px;overflow:hidden;background:var(--sf)}
 #s2 .cp{padding:5%;border-right:1px solid var(--br);background:var(--sf)}
@@ -192,6 +195,29 @@ html,body{width:100%;height:100%;overflow:hidden;background:#080808;font-family:
     <div class="wm">forma<em>.</em></div>
     <div class="tl">Work done. <em>Without</em> the noise.</div>
     <div class="url">forma.cool</div>
+  </div>
+</div>
+
+<!-- S1b WHAT FORMA DOES -->
+<div class="slide lt" id="s1b">
+  <div class="pad">
+    <div class="ey">What Is a Tool Suite</div>
+    <div class="big" style="margin-bottom:3.5%">What Forma Does.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4%;align-items:start;flex:1;min-height:0">
+      <div>
+        <div class="cl">Free · No account required</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="tag">Compress PDF</span><span class="tag">Merge PDFs</span><span class="tag">Split PDF</span><span class="tag">PDF to Word</span><span class="tag">Convert Image</span><span class="tag">Extract Audio</span><span class="tag">Trim Video</span><span class="tag">JSON Formatter</span><span class="tag">Base64</span><span class="tag">URL Encoder</span>
+        </div>
+      </div>
+      <div>
+        <div class="cl">Pro · $9<span style="font-size:65%;color:var(--mu)">/mo</span> · AI tools</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="tag">PDF to Excel</span><span class="tag">Summarise Doc</span><span class="tag">Transcribe Audio</span><span class="tag">Remove Background</span><span class="tag">Receipt to Excel</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:auto;padding-top:3%;font-size:clamp(11px,1.25vw,15px);line-height:1.55;color:var(--mu);max-width:92%">AI-powered tools require a <strong style="font-weight:600;color:var(--tx)">Pro</strong> subscription for <strong style="font-weight:600;color:var(--tx)">unlimited</strong> use.</p>
   </div>
 </div>
 
@@ -472,23 +498,6 @@ html,body{width:100%;height:100%;overflow:hidden;background:#080808;font-family:
       <div class="card" style="margin:0"><div class="cl">Hosting</div><div class="ct">Vercel</div><div class="cb">Serverless · Auto-scaling · Zero ops</div></div>
       <div class="card" style="margin:0"><div class="cl">Database</div><div class="ct">Supabase</div><div class="cb">PostgreSQL · Auth · Row-level security</div></div>
       <div class="card" style="margin:0"><div class="cl">AI</div><div class="ct">Claude + Whisper</div><div class="cb">Haiku for extraction · Whisper for transcription</div></div>
-    </div>
-    <div style="margin-top:5%;padding-top:4%;border-top:1px solid var(--br)">
-      <div style="font-size:clamp(9px,1vw,11px);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);margin-bottom:3%">What's in Forma · 15 tools</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4%;align-items:start">
-        <div>
-          <div class="cl">Free · No account</div>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span class="tag">Compress PDF</span><span class="tag">Merge PDFs</span><span class="tag">Split PDF</span><span class="tag">PDF to Word</span><span class="tag">Convert Image</span><span class="tag">Extract Audio</span><span class="tag">Trim Video</span><span class="tag">JSON Formatter</span><span class="tag">Base64</span><span class="tag">URL Encoder</span>
-          </div>
-        </div>
-        <div>
-          <div class="cl">AI · Pro</div>
-          <div style="display:flex;flex-wrap:wrap;gap:6px">
-            <span class="tag">PDF to Excel</span><span class="tag">Summarise Doc</span><span class="tag">Transcribe Audio</span><span class="tag">Remove Background</span><span class="tag">Receipt to Excel</span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -775,10 +784,10 @@ function go(n){
   sn.textContent=String(cur+1).padStart(2,'0')+' / '+String(tot).padStart(2,'0')
   pg.style.width=((cur+1)/tot*100)+'%'
   if(cur===0)window._cr&&window._cr();else window._cp&&window._cp()
-  if(cur===3){window._es&&window._es();window._fs&&window._fs()}else{window._ep&&window._ep();window._fp&&window._fp()}
-  if(cur===5&&pv!==5)rCompress()
-  if(cur===6&&pv!==6)rSplit()
-  if(cur===7&&pv!==7)rReceipt()
+  if(cur===4){window._es&&window._es();window._fs&&window._fs()}else{window._ep&&window._ep();window._fp&&window._fp()}
+  if(cur===6&&pv!==6)rCompress()
+  if(cur===7&&pv!==7)rSplit()
+  if(cur===8&&pv!==8)rReceipt()
 }
 document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();go(cur+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(cur-1)}})
 let tx=0;document.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});document.addEventListener('touchend',e=>{const dx=tx-e.changedTouches[0].clientX;if(Math.abs(dx)>40)go(dx>0?cur+1:cur-1)},{passive:true})

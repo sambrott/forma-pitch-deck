@@ -1,6 +1,6 @@
 # Forma pitch deck · speaker notes
 
-Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are a live script—you can shorten on the fly.
+Use with `index.html`: **14 slides** in order (← →). Bullets are a live script—you can shorten on the fly.
 
 ---
 
@@ -13,7 +13,17 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 2 · The problem (`s2`)
+## Slide 2 · What Forma does (`s1b`)
+
+- Eyebrow: **What Is a Tool Suite** — frame a **suite** as one place for everyday file work, not one-off converters.
+- Headline: **What Forma Does.** — immediate product clarity after the logo.
+- **Left column · Free** — **no account** for the deterministic tools; this is the wide top of funnel.
+- **Right column · Pro ($9/mo) · AI tools** — the five **AI** capabilities; tie price to **unlimited** use on the line at the bottom.
+- Close read on the footer note: **AI-powered tools require Pro for unlimited use** — answers “can I try AI for free?” before they ask.
+
+---
+
+## Slide 3 · The problem (`s2`)
 
 - The category isn’t missing tools—it’s missing **trust and respect**.
 - **Smallpdf**, **iLovePDF**: familiar names—paywalls, caps, surprise charges surface in reviews.
@@ -22,7 +32,7 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 3 · Brand directions (`s3`)
+## Slide 4 · Brand directions (`s3`)
 
 - Early on we explored **three brand directions**.
 - **A · “Pxl”** — dark-first, neon, monospace—felt like a developer utility, not a document product.
@@ -31,7 +41,7 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 4 · Brand system (`s4`)
+## Slide 5 · Brand system (`s4`)
 
 - **Guidelines**: not a fuzzy mood board—tokens we actually ship.
 - **Colors**: accent **#E8622A**, page **#F7F4EF**, text **#181614**, dark base **#060606**—light and dark are first-class.
@@ -42,7 +52,7 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 5 · Design & prototyping (`s6`)
+## Slide 6 · Design & prototyping (`s6`)
 
 - How we got from PDF of guidelines to a site: **three steps**, no hand-waving.
 - **01 · Brand system defined** — everything in **tokens** (color, type, spacing, states).
@@ -51,14 +61,14 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 6 · Tool demo · Compress PDF (`s7`)
+## Slide 7 · Tool demo · Compress PDF (`s7`)
 
 - **Compress** is representative: frictionless intake, honest progress, tangible outcome.
 - Walk through silently or narrate lightly: drag/drop cue → file card → staged progress messages → **~74% savings**-style result.** Numbers on deck are illustrative; adjust if you cite live benchmarks.
 
 ---
 
-## Slide 7 · Tool demo · Split PDF (`s8`)
+## Slide 8 · Tool demo · Split PDF (`s8`)
 
 - **Split** sells **deterministic document logic** — one artifact becomes two with clear semantics.
 - On screen: spine between sides, labels **Pages 1–12 · Pages 13–24** once the animation completes.
@@ -66,17 +76,17 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 8 · Tool demo · Receipt → Excel (`s9`)
+## Slide 9 · Tool demo · Receipt → Excel (`s9`)
 
 - **Receipt → spreadsheet** proves **structured extraction**, not OCR theatre.
 - Line items roll into rows; totals reconcile—shows **trust** (“the math checks”) more than flashy UI.
 
 ---
 
-## Slide 9 · Tool stack (`s10`)
+## Slide 10 · Tool stack (`s10`)
 
 - One line: **Tool stack.** Boring-by-design on purpose—we’re buying **maintainability and speed**.
-- Lower band: split—**ten free / no-account tools** vs **five AI tools on Pro** ($9/mo framing elsewhere); the on-screen list matches what’s on forma.
+- The **full tool list** already landed on **slide 2**; here you only walk the **engineering** tiles.
 - **Next.js 14** App Router · **TypeScript** · **CSS Modules**.
 - **Vercel** for deploy and scaling with minimal ops.
 - **Supabase** for **PostgreSQL**, auth patterns, row-level security when we need it.
@@ -85,7 +95,7 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 10 · Marketing (`s11`)
+## Slide 11 · Marketing (`s11`)
 
 - **Marketing.** Headline stays short intentionally—everything lives in the four tiles.
 - **Twitter**: build in public—authentic beats polished when you’re unknown.
@@ -95,7 +105,7 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 11 · Pricing (`s12`)
+## Slide 12 · Pricing (`s12`)
 
 - **Pricing** in three tiers—plain language matches the slides.
 - **Free · $0** — ads, optional sign-in framing; cite **fractional pennies** per recreational user **only if** you’re confident in real telemetry.
@@ -105,7 +115,7 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 12 · The ask (`s13`)
+## Slide 13 · The ask (`s13`)
 
 - **$12,000 · six months of runway.** Round number on purpose—not a padded Series A cartoon.
 - **$3k marketing** — Product Hunt push, influencer-style posts budgeted thin, Reddit/Twitter pushes, polished demo reel.
@@ -115,7 +125,7 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 
 ---
 
-## Slide 13 · Close · Why Forma (`s14`)
+## Slide 14 · Close · Why Forma (`s14`)
 
 - Three beats—align your spoken line with what’s on screen.
 - **01** — **A tool suite built for security and functionality**—position Forma as serious infrastructure, not a toy converter.
@@ -128,5 +138,5 @@ Use with `forma_pitch_deck.html`: **13 slides** in order (← →). Bullets are 
 ## Quick logistics
 
 - **Navigate**: arrow keys, space bar, footer dots.
-- Practice **slides 6–8** (**Compress**, **Split**, **Receipt**) once—loops run automatically once you land on those slides; rehearse so you aren’t talking over the payoff animations.
+- Practice **slides 7–9** (**Compress**, **Split**, **Receipt**) once—loops run automatically once you land on those slides; rehearse so you aren’t talking over the payoff animations.
 - Customize any **financial** bullets to match diligence you’d actually defend.
